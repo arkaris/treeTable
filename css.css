@@ -1,0 +1,13 @@
+table.tree-table, .tree-table th, .tree-table td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	padding: 0.5rem;
+}
+
+.tree-table .expandable td:first-child::before {
+	content: "+";
+}
+
+.tree-table .expanded td:first-child::before {
+	content: "-";
+}
